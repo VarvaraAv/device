@@ -2,11 +2,192 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>device</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Поиск</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Личный кабинет</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Выход</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Сравнить</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Корзина</a>
+          </li>
+        </ul>
+
+        <ul class="navigation__list navigation__user">
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Каталог товаров</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Гарантия</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Контакты</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main class="main-index">
+      <h1 class="visually-hidden">device</h1>
+
+      <section class="cards">
+        <h2 class="cards__title">Карточки товаров
+        </h2>
+        <section>
+          <h3 class="gallery__title">Фото</h3>
+            <img class="slider__image" src="" alt="Фото товара" >
+            <button class="slider__button slider__prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="slider__button slider__next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+            <ol class="slider__number">
+              <li class="slider__number--item">
+                <button class="slider__number--button slider__number--button-current" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button> 
+              </li>
+              <li class="slider__number--item">
+                <button class="slider__number--button slider__number--button-current" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button> 
+              </li>
+              <li class="slider__number--item">
+                <button class="slider__number--button slider__number--button-current" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button> 
+              </li>
+         </section> 
+         <section>             
+            <h3 class="card__title">Характеристи</h3>
+            <span class="card__name">Порхает как бабочка,
+              жалит как пчела!
+            </span>
+            <p class="card__description">
+              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <a class="button card__more" href="#">Подробнее
+            </a>
+          </section>
+      </section>
+
+      <section class="catalog">
+        <h2 class="catalog__title"></h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__link" href="">Виртуальная
+            реальность</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="">Моноподы 
+              для селфи</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="">Экшн-камеры</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="">Фитнес-браслеты</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="">Умные часы</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="shipping">
+        <h2 class="shipping__title">Доставка</h2>
+        <p class="shipping__description">Мы с удовольствием доставим ваш товар прямо
+          к вашему подъезду совершенно бесплатно! Ведь
+          мы неплохо заработаем, поднимая его на ваш этаж.
+        </p>
+        <ul class="shipping__list">
+        <li class="shipping__item">
+          <a class="button shipping__button" href="">
+            Доставка
+          </a>
+        </li>
+        <li class="shipping__item">
+          <a class="button shipping__button" href="">
+            Гарантия
+          </a>
+        </li>
+        <li class="shipping__item">
+          <a class="button shipping__button" href="">
+            Кредит
+          </a>
+        </li>
+        </ul>
+        <button class="shipping-specil__button" type="button">
+          <span class="shipping-specil__title">
+            Доставим редкий товар под заказ
+          </span>
+        </button>
+      </section>
+
+      <section class="about-us">
+        <h2 class="about-us__title">О нас</h2>
+        <p class="about-us__description">
+          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+          Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
+        </p>
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            <a class="about-us__link" href="">Меловые линии</a>
+          </li>
+          <li class="about-us__item">
+            <a class="about-us__link" href="">СДИК</a>
+          </li>
+          <li class="about-us__item">
+            <a class="about-us__link" href="">ТоксБерри</a>
+          </li>
+        </ul>
+        <a class="button about-us__button" href="">Подробнее о нас</a>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. 
+          Заодно сможете проверить работоспособность покупки. 
+        </p>
+        <h3 class="contacts__subtitle">Интернет-магазин «Девайс»</h3>
+        <address class="contacts-address">
+        <p class="address__text">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </p>
+        <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        </address>
+        <h3 class="contacts__subtitle">Время работы</h3>
+        <ul class="contacts-schedule">
+          <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+          <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+        </ul>
+        <a class="button contacts__button" href="">Напишите нам</a>
+      </section>
+
+    </main>
+
 
   </body>
 
