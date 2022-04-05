@@ -32,6 +32,17 @@ body {
     background-color: #FFFFFF ;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .button {
     font-family: "Raleway";
     font-size: 18px;
@@ -349,6 +360,17 @@ text-align: center;
     color: #000000;
 }
 
+/* cards */
+
+
+.catalog-products {
+    background-color: #F0F0F0;
+}
+
+.product__list {
+    background-color: #FFFFFF;
+}
+
 .product-card__title {
     font-family: "Rubik";
     font-weight: 700;
@@ -370,15 +392,29 @@ text-align: center;
     color: #444444;
 }
 
+/* pagination */
+
 .pagination__link {
+    font-size: 16px;
+    line-height: 20px;
     text-decoration: none;
-    color: #000000;
+    color: #444444;
 }
 
-.catalog-products {
-    background-color: #F0F0F0;
+.pagination-show-more {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
-.product__list {
-    background-color: #FFFFFF;
+.pagination__direction {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }

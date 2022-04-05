@@ -29,17 +29,17 @@
           <ul class="navigation__list navigation__user">
             <li class="navigation__item">
               <a class="navigation__link" href="">
-                <span class="visually-hidden">Войти</span>
+                <span class="navigation__name">Войти</span>
               </a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="">
-                <span class="visually-hidden">Сравнить</span>
+                <span class="navigation__name">Сравнить</span>
               </a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="">
-                <span class="visually-hidden">Корзина</span>
+                <span class="navigation__name">Корзина</span>
               </a>
             </li>
           </ul>
@@ -49,53 +49,53 @@
           <ul class="navigation-product__list">
             <li class="navigation-product__item">
               <a class="navigation-product__link" href="">
-                <span class="visually-hidden">Доставка</span>
+                <span class="navigation__name">Доставка</span>
               </a>
             </li>
             <li class="navigation-product__item">
               <a class="navigation-product__link" href="">
-                <span class="visually-hidden">Гарантия</span>
+                <span class="navigation__name">Гарантия</span>
               </a>
             </li>
             <li class="navigation-product__item">
               <a class="navigation-product__link" href="">
-                <span class="visually-hidden">Контакты</span>
+                <span class="navigation__name">Контакты</span>
               </a>
             </li>
           </ul>
         </nav>
   
         <nav class="navigation">
-          <p class="navigation-catalog__text">Каталог товаров</p>
+          <a class="navigation-catalog__link--main" href="catalog.html">Каталог товаров</a>
           <ul class="navigation-catalog">
             <li class="navigation-catalog__item">
               <a class="navigation-catalog__link" href="">
-                <span class="visually-hidden">Виртуальная реальность</span>
+                <span class="navigation__name">Виртуальная реальность</span>
               </a>
             </li>
             <li class="navigation-catalog__item">
               <a class="navigation-catalog__link" href="">
-                <span class="visually-hidden">Моноподы для селфи</span>
+                <span class="navigation__name">Моноподы для селфи</span>
               </a>
             </li>
             <li class="navigation-catalog__item">
               <a class="navigation-catalog__link" href="">
-                <span class="visually-hidden">Экшн-камеры</span>
+                <span class="navigation__name">Экшн-камеры</span>
               </a>
             </li>
             <li class="navigation-catalog__item">
               <a class="navigation-catalog__link" href="">
-                <span class="visually-hidden">Фитнес-браслеты</span>
+                <span class="navigation__name">Фитнес-браслеты</span>
               </a>
             </li>
             <li class="navigation-catalog__item">
               <a class="navigation-catalog__link" href="">
-                <span class="visually-hidden">Умные часы</span>
+                <span class="navigation__name">Умные часы</span>
               </a>
             </li>
             <li class="navigation-catalog__item">
               <a class="navigation-catalog__link" href="">
-                <span class="visually-hidden">Квадрокоптеры</span>
+                <span class="navigation__name">Квадрокоптеры</span>
               </a>
             </li>
           </ul>
@@ -192,6 +192,12 @@
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
+          <a class="button button-light" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
 
           <ul class="product__list">
             <li class="product-card">
@@ -230,10 +236,12 @@
             </li>
           </ul>
 
+
+          <button class="button pagination-show-more" type="button">Загрузить ещё</button>
           <ul class="pagination">
             <li class="pagination__item">
               <a class="pagination__link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
+                <span class="pagination__direction">Назад</span>
               </a>
             </li>
             <li class="pagination__item">
@@ -253,11 +261,10 @@
             </li>
             <li class="pagination__item">
               <a class="pagination__link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
+                <span class="pagination__direction">Вперёд</span>
               </a>
             </li>
           </ul>
-          <button class="button pagination-show-more" type="button">Показать ещё</button>
         </section>
     </main>
 
@@ -280,17 +287,17 @@
           <ul class="footer-shipping__list">
             <li class="footer-shipping__item">
               <a class="footer-shipping__link" href="">
-                <span class="visually-hidden">Доставка</span>
+                <span class="footer-shipping__name">Доставка</span>
               </a>
             </li>
             <li class="footer-shipping__item">
               <a class="footer-shipping__link" href="">
-                <span class="visually-hidden">Гарантия</span>
+                <span class="footer-shipping__name">Гарантия</span>
               </a>
             </li>
             <li class="footer-shipping__item">
               <a class="footer-shipping__link" href="">
-                <span class="visually-hidden">Контакты</span>
+                <span class="footer-shipping__name">Контакты</span>
               </a>
             </li>
           </ul>
@@ -302,20 +309,26 @@
             <li class="footer-social__item">
               <a class="footer-social__link" href="#">
                 <span class="visually-hidden">Фейсбук</span>
+                <img src="images/logo_facebook.png" alt="Фейсбук">
               </a>
             </li>
             <li class="footer-social__item">
               <a class="footer-social__link" href="#">
                 <span class="visually-hidden">Инстаграм</span>
+                <img src="images/logo_instagram.png" alt="Инстаграм">
               </a>
             </li>
             <li class="footer-social__item">
               <a class="footer-social__link" href="#">
                 <span class="visually-hidden">Твиттер</span>
+                <img src="images/logo_twitter.png" alt="Твиттер">
               </a>
             </li>
           </ul>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/"> <img src="images/htmlacademy.png"> <span class="visually-hidden">.html academy </span> </a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/"> 
+            <img src="images/htmlacademy.png" alt="сделано в htmlacademy"> 
+            <span class="visually-hidden">.html academy </span> 
+          </a>
         </section>
         </section>
   
